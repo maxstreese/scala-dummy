@@ -7,4 +7,4 @@ vscode:
     - 'vscodevim.vim@1.16.0:/5VFvnA8Qrf16ESjAohurw=='
     - 'eamodio.gitlens@10.2.1:WIWu3zHU4VPT8r/v866LUw=='
 tasks:
-  - prebuild: 'sbt -Dbloop.export-jar-classifiers=sources compile bloopInstall && bloop compile --cascade scala-dummy'
+  - prebuild: './.gitpod.tasks.d/prebuild.sh'

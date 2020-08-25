@@ -10,6 +10,6 @@ RUN sudo bash -c "(echo '#!/usr/bin/env sh' && curl -L https://github.com/lihaoy
 
 RUN sudo curl -fLo /usr/local/bin/coursier https://git.io/coursier-cli-linux && sudo chmod +x /usr/local/bin/coursier
 
-RUN coursier install bloop --only-prebuilt=true
+RUN coursier install --only-prebuilt=true bloop scalafmt scalafix mdoc
 
 ENV PATH="$PATH:/home/gitpod/.local/share/coursier/bin"
