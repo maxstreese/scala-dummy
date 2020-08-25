@@ -8,8 +8,8 @@ RUN bash -c ". /home/gitpod/.sdkman/bin/sdkman-init.sh && \
 
 RUN sudo bash -c "(echo '#!/usr/bin/env sh' && curl -L https://github.com/lihaoyi/Ammonite/releases/download/2.2.0/2.13-2.2.0) > /usr/local/bin/amm && chmod +x /usr/local/bin/amm"
 
-RUN sudo curl -fLo /usr/local/bin/cs https://git.io/coursier-cli-linux && sudo chmod +x /usr/local/bin/cs
+RUN sudo curl -fLo /usr/local/bin/coursier https://git.io/coursier-cli-linux && sudo chmod +x /usr/local/bin/coursier
 
-RUN cs install bloop --only-prebuilt=true
+RUN coursier install bloop --only-prebuilt=true
 
 RUN echo -e '# Binaries managed by Coursier (Scala artifact fetching)\nexport PATH="$PATH:/home/gitpod/.local/share/coursier/bin"' > /home/gitpod/.bashrc.d/101-coursier
