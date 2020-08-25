@@ -1,0 +1,8 @@
+{
+  "editor.lineNumbers": "relative",
+  "editor.rulers": [120],
+  "editor.wordWrapColumn": 120,
+  "vim.easymotion": true,
+  "vim.insertModeKeyBindings": [{"before": ["f", "d"], "after": ["<esc>"]}],
+  "vim.useSystemClipboard": true
+}

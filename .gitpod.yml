@@ -4,3 +4,5 @@ vscode:
   extensions:
     - scalameta.metals@1.9.3:Ul5QiWDI6XaZcygyT9BSCg==
     - scala-lang.scala@0.4.2:HkCdqnx7jBQQ2Oj2HZ90+w==
+    - vscodevim.vim@1.16.0:/5VFvnA8Qrf16ESjAohurw==
+    - eamodio.gitlens@10.2.1:WIWu3zHU4VPT8r/v866LUw==
