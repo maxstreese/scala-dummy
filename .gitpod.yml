@@ -8,3 +8,4 @@ vscode:
     - 'eamodio.gitlens@10.2.1:WIWu3zHU4VPT8r/v866LUw=='
 tasks:
   - prebuild: './.gitpod.tasks.d/prebuild.sh'
+  - init: './.gitpod.tasks.d/init.sh'
