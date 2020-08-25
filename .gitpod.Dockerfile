@@ -12,4 +12,4 @@ RUN sudo curl -fLo /usr/local/bin/coursier https://git.io/coursier-cli-linux && 
 
 RUN coursier install bloop --only-prebuilt=true
 
-RUN echo -e '# Binaries managed by Coursier (Scala artifact fetching)\nexport PATH="$PATH:/home/gitpod/.local/share/coursier/bin"' > /home/gitpod/.bashrc.d/101-coursier
+ENV PATH="$PATH:/home/gitpod/.local/share/coursier/bin"
