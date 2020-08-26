@@ -12,4 +12,6 @@ RUN sudo curl -fLo /usr/local/bin/coursier https://git.io/coursier-cli-linux && 
 
 RUN coursier install --only-prebuilt=true bloop scalafmt scalafix mdoc
 
+RUN coursier fetch org.scalameta:metals_2.12:0.9.3
+
 ENV PATH="$PATH:/home/gitpod/.local/share/coursier/bin"
