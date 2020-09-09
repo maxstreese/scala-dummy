@@ -12,8 +12,6 @@ object Main extends App {
 
   println(schema)
 
-  def jsonSchema[T](id: String) = {
-    // JsonFormatter.format(AsValue.schema(Json.schema[T], json.schema.Version.Draft07(id)))
-  }
+  def test[T] = Json.schema[T]
 
 }
