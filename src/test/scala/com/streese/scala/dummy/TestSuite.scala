@@ -1,8 +1,10 @@
 package com.streese.scala.dummy
 
-class TestSuite extends munit.FunSuite {
-  test("hi") {
-    assertEquals("hi", "hi")
+import org.scalatest.freespec.AnyFreeSpec
+import org.scalatest.matchers.should.Matchers
+
+class TestSuite extends AnyFreeSpec with Matchers {
+  "This should pass" in {
+    1 shouldBe 1
   }
 }
-
